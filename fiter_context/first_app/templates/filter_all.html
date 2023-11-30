@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Filter page</h1>
+    <div>
+        <p>Normal_value:{{add_nu}}</p>
+        <p>Filter_value:{{add_nu | add:20}}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{addSla | addslashes}}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{addSla | capfirst}}</p>
+    </div>
+    <hr>
+    <div>
+        <textarea>{{addSla}}</textarea>
+        <br>
+        <textarea>{{addSla | center:20 }}</textarea>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{addSla | cut:" "}}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{dateTime}}</p>
+        <p>Filter_value:{{dateTime |  date:"D d M Y"  }}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{null}}</p>
+        <p>Filter_value:{{null | default:"nothing"}}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ list | dictsort:"name"}}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{add_nu}}</p>
+        <p>Filter_value:{{add_nu | divisibleby:"2"}}</p>
+    </div>
+    <hr>
+    <div>
+        <p>Normal_value:{{es}}</p>
+        <p>Filter_value:{{ es | escape }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ lit | filesizeformat }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ lit | first }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ lit | last }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ list | join:"\\" }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ list | length }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{ addSla | linenumbers }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{up}}</p>
+        <p>Filter_value:{{ up | lower }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{UP}}</p>
+        <p>Filter_value:{{ UP | make_list }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ list | random }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ list | slice:"1:2" }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{up}}</p>
+        <p>Filter_value:{{ up |  slugify }}</p>
+    </div>
+        <div>
+        <p>Normal_value:{{list}}</p>
+        <p>Filter_value:{{ list | join:"\\" }}</p>
+    </div>
+    <p>{{ delet | timesince }}</p>
+    <p>timesice</p>
+
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{ addSla |  title }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{ addSla |  unordered_list }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{ addSla |  upper }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{addSla}}</p>
+        <p>Filter_value:{{ addSla |  wordcount }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{dateTime}}</p>
+        <p>Filter_value:{{ dateTime |  date:"SHORT_DATE_FORMAT" }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{dateTime}}</p>
+        <p>Filter_value:{{ dateTime |  date }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{lorem}}</p>
+        <p>Filter_value:{{ lorem |  truncatechars:6 }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{lorem}}</p>
+        <p>Filter_value:{{ lorem |  truncatewords:8 }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{p}}</p>
+        <p>Filter_value:{{ p |  striptags }}</p>
+    </div>
+    <div>
+        <p>Normal_value:{{add_nu}}</p>
+        <p>Filter_value:You have {{ add_nu }} tomato{{ add_nu | pluralize:"es" }}.</p>
+        <p>{{addSla | make_list }}</p>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
